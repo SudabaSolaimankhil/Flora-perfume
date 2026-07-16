@@ -1,0 +1,615 @@
+/*==============================
+        Google Font
+===============================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#14090A;
+    color:#F7E6DD;
+    font-family:'Inter',sans-serif;
+    overflow-x:hidden;
+
+}
+
+/*==============================
+          Colors
+===============================*/
+
+:root{
+
+    --bg:#14090A;
+
+    --card:#4B1418;
+
+    --card2:#5A171D;
+
+    --text:#F5E8E2;
+
+    --paragraph:#D8BEB5;
+
+    --border:#7A4042;
+
+    --button:#2A1516;
+
+    --hover:#6E1F26;
+
+}
+
+/*==============================
+      Section Padding
+===============================*/
+
+.about-section{
+
+    padding:100px 0;
+
+}
+
+.featured-work{
+
+    padding:90px 0;
+
+}
+
+/*==============================
+      Small Heading
+===============================*/
+
+.section-title{
+
+    color:#C9ACA2;
+
+    letter-spacing:3px;
+
+    font-size:13px;
+
+    text-transform:uppercase;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-weight:600;
+
+}
+
+.section-title::after{
+
+    content:"";
+
+    width:60px;
+
+    height:1px;
+
+    background:#87625B;
+
+}
+
+/*==============================
+      Main Heading
+===============================*/
+
+.about-heading{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:72px;
+
+    line-height:1.05;
+
+    margin:25px 0;
+
+    color:#fff;
+
+}
+
+.about-heading span{
+
+    display:block;
+
+    font-style:italic;
+
+    color:#EAD9D2;
+
+    font-weight:500;
+
+}
+
+/*==============================
+        Paragraph
+===============================*/
+
+.about-text{
+
+    color:var(--paragraph);
+
+    line-height:32px;
+
+    font-size:17px;
+
+    margin:35px 0;
+
+    max-width:430px;
+
+}
+
+/*==============================
+        Button
+===============================*/
+
+.main-btn{
+
+    background:transparent;
+
+    color:#fff;
+
+    border:2px solid #7D5A54;
+
+    border-radius:50px;
+
+    padding:15px 28px;
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+    font-weight:600;
+
+    transition:.4s;
+
+}
+
+.main-btn i{
+
+    margin-left:12px;
+
+}
+
+.main-btn:hover{
+
+    background:#6D1D23;
+
+    border-color:#6D1D23;
+
+    color:#fff;
+
+}
+
+/*==============================
+        Info Cards
+===============================*/
+
+.info-card{
+
+    background:#57161B;
+
+    border-radius:20px;
+
+    padding:40px 30px;
+
+    min-height:330px;
+
+    transition:.45s;
+
+    border:1px solid transparent;
+    height: 400px;
+
+}
+
+.info-card:hover{
+
+    transform:translateY(-12px);
+
+    border-color:#8A5656;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.35);
+
+}
+
+.info-card .icon{
+
+    font-size:34px;
+
+    color:#F5DDD5;
+
+    margin-bottom:35px;
+
+}
+
+.info-card h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:58px;
+
+    margin-bottom:15px;
+
+    color:#fff;
+
+}
+
+.info-card h5{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:30px;
+
+    line-height:42px;
+
+    margin-bottom:18px;
+
+    color:#fff;
+
+}
+
+.info-card p{
+
+    color:#DFC6BE;
+
+    line-height:30px;
+
+    font-size:16px;
+
+}
+
+
+
+
+
+
+
+
+
+/*=========================================
+            Featured Work
+==========================================*/
+
+.featured-work{
+
+    position: relative;
+
+}
+
+.project-card{
+
+    transition: .45s;
+
+    cursor: pointer;
+
+}
+
+.project-card:hover{
+
+    transform: translateY(-12px);
+
+}
+
+.project-img{
+
+    position: relative;
+
+    overflow: hidden;
+
+    border-radius: 16px;
+
+    background: #2c1113;
+
+}
+
+.project-img img{
+
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    transition: .6s;
+
+    display: block;
+
+}
+
+.project-card:hover img{
+
+    transform: scale(1.08);
+
+}
+
+.project-img::before{
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,.45),
+        rgba(0,0,0,0)
+    );
+
+    opacity: 0;
+
+    transition: .4s;
+
+    z-index: 1;
+
+}
+
+.project-card:hover .project-img::before{
+
+    opacity: 1;
+
+}
+
+.project-content{
+
+    margin-top: 18px;
+
+}
+
+.project-content h4{
+
+    color: #fff;
+
+    font-size: 18px;
+
+    letter-spacing: 1px;
+
+    margin-bottom: 8px;
+
+    font-weight: 700;
+
+}
+
+.project-content p{
+
+    color: #d7bfb5;
+
+    font-size: 15px;
+
+    margin: 0;
+
+}
+
+/*=========================================
+            Image Shadow
+==========================================*/
+
+.project-img{
+
+    box-shadow: 0 15px 35px rgba(0,0,0,.28);
+
+}
+
+.project-card:hover .project-img{
+
+    box-shadow: 0 25px 45px rgba(0,0,0,.45);
+
+}
+
+/*=========================================
+            Animation
+==========================================*/
+
+.info-card,
+.project-card,
+.about-heading,
+.about-text,
+.main-btn{
+
+    transition: .45s ease;
+
+}
+
+/*=========================================
+            Scrollbar
+==========================================*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#180b0d;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#6b2328;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#8f353d;
+
+}
+
+
+
+
+/*==============================
+        1400px
+===============================*/
+
+@media(max-width:1400px){
+
+.about-heading{
+
+font-size:65px;
+
+}
+
+}
+
+/*==============================
+        1200px
+===============================*/
+
+@media(max-width:1200px){
+
+.about-heading{
+
+font-size:56px;
+
+}
+
+.info-card{
+
+min-height:300px;
+
+padding:35px;
+
+}
+
+}
+
+/*==============================
+        992px
+===============================*/
+
+@media(max-width:992px){
+
+.about-section{
+
+text-align:center;
+
+}
+
+.about-text{
+
+margin:auto;
+margin-top:25px;
+margin-bottom:35px;
+
+}
+
+.info-card{
+
+min-height:auto;
+
+}
+
+}
+
+/*==============================
+        768px
+===============================*/
+
+@media(max-width:768px){
+
+.about-heading{
+
+font-size:48px;
+
+}
+
+.section-title{
+
+font-size:12px;
+
+}
+
+.project-img img{
+
+height:250px;
+
+}
+
+}
+
+/*==============================
+        576px
+===============================*/
+
+@media(max-width:576px){
+
+.about-section{
+
+padding:70px 0;
+
+}
+
+.featured-work{
+
+padding:70px 0;
+
+}
+
+.about-heading{
+
+font-size:40px;
+
+}
+
+.about-text{
+
+font-size:15px;
+
+line-height:28px;
+
+}
+
+.main-btn{
+
+width:100%;
+
+padding:15px;
+
+}
+
+.info-card{
+
+padding:30px 25px;
+
+}
+
+.info-card h2{
+
+font-size:48px;
+
+}
+
+.info-card h5{
+
+font-size:25px;
+
+line-height:35px;
+
+}
+
+.project-img img{
+
+height:220px;
+
+}
+
+}
+
+
+
+
+
+
+

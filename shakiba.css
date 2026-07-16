@@ -1,0 +1,58 @@
+/* CASE STUDIES */
+.card{
+    border-radius:0;
+    }
+    
+    .card img{
+    height:150px;
+    object-fit:cover;
+    }
+    
+    .card-img-overlay{
+    background:linear-gradient(to right,
+    rgba(30,0,0,.75),
+    rgba(30,0,0,.15));
+    }
+    
+    .btn{
+    letter-spacing:1px;
+    font-size:14px;
+    }
+    
+    hr{
+    border-color:#7b3d47;
+    opacity:1;
+    }
+    
+    .display-5,
+    .display-3{
+    font-family:"Cormorant Garamond",serif;
+    }
+    
+    footer a:hover{
+    color:#fff!important;
+    }
+    
+    section{
+    overflow:hidden;
+    }
+/* footer */
+    footer a{
+        transition:.3s;
+        }
+        
+        footer a:hover{
+        color:#fff!important;
+        }
+        
+        footer .form-control{
+        background:#2b1617;
+        border:none;
+        color:#fff;
+        }
+        
+        footer .form-control:focus{
+        background:#2b1617;
+        color:#fff;
+        box-shadow:none;
+        }
